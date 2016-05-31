@@ -32,12 +32,12 @@
             <p class="order__describe">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
             </p>
             <form class="order__list" action="handler.html" method="post">
-                <p class="order__type">ТИП</p>
+                <h3 class="order__type">ТИП</h3>
                 <input type="radio" name="interior" id="interior-radio" checked>
                 <label for="iterior-radio">Аксессуар для интерьера</label>
                 <input type="radio" name="toy" id="toy-radio">
                 <label for="toy-radio">Детская игрушка</label>
-                <p class="order__type">ЦВЕТ</p>
+                <h3 class="order__type">ЦВЕТ</h3>
                 <input type="checkbox" name="white" id="white-checkbox" checked>
                 <label for="white-checkbox">Белый</label>
                 <input type="checkbox" name="white" id="grey-checkbox" checked>
@@ -50,22 +50,22 @@
                 <label for="pink-checkbox">Розовый</label>
                 <input type="checkbox" name="white" id="orange-checkbox">
                 <label for="orange-checkbox">Оранжевый</label>
-                <p class="order__type">ФИО</p>
+                <h3 class="order__type">ФИО</h3>
                 <label id="last-name-form">Фамилия:</label>
                 <input type="text" name="last-name" id="last-name-form" placeholder="Укажите фамилию">
                 <label id="name-form">Имя:</label>
                 <input type="text" name="last-name" id="name-form" placeholder="Введите ваше имя">
                 <label id="middle-name-form">Отчество:</label>
                 <input type="text" name="last-name" id="middle-name-form" placeholder="Отчество, если желаете">
-                <p class="order__type">ТЕЛ</p>
+                <h3 class="order__type">ТЕЛ</h3>
                 <input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ">
                 <p class="order__type">E-MAIL</p>
                 <input type="email" name="email" placeholder="Ваш e-mail">
-                <p class="order__type">ДОП</p>
-                <textarea name="comment" rows="6">
+                <h3 class="order__type">ДОП</h3>
+                <textarea class="order__comment" name="comment" rows="6">
                 Опишите все ваши пожелания к заказу
                 </textarea>
-                <input type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
+                <input class="order__submit" type="submit" value="ОТПРАВИТЬ ЗАКАЗ">
             </form>
         </div>
     </div>
