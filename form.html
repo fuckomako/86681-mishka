@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+   
+    <div class="page-top-header">
+        <div class="page-top-header__logo">
+            <img src="img/logo.svg" width="86" height="35" alt="Магазин Мишка">
+        </div>
+        <nav class="main-nav  main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item  main-nav__item--active"><a href="#">Каталог товаров</a></li>
+                    <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+                    <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+                    <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <header class="page-header">
+        <h1 class="page-header__title">Вязание на заказ</h1>
+    </header>
+    
+    <div class="order">
+        <div class="order_wrapper">
+            <p class="order__describe">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.
+            </p>
+            <form class="order__list" action="handler.html" method="post">
+                <h3 class="order__type">Тип</h3>
+                <input type="radio" name="interior" id="interior-radio" checked>
+                <label for="iterior-radio">Аксессуар для интерьера</label>
+                <input type="radio" name="toy" id="toy-radio">
+                <label for="toy-radio">Детская игрушка</label>
+                <h3 class="order__type">Цвет</h3>
+                <input type="checkbox" name="white" id="white-checkbox" checked>
+                <label for="white-checkbox">Белый</label>
+                <input type="checkbox" name="white" id="grey-checkbox" checked>
+                <label for="grey-checkbox">Серый</label>
+                <input type="checkbox" name="white" id="tiffany-checkbox">
+                <label for="tiffany-checkbox">"Тиффани"</label>
+                <input type="checkbox" name="white" id="black-checkbox">
+                <label for="black-checkbox">Черный</label>
+                <input type="checkbox" name="white" id="pink-checkbox">
+                <label for="pink-checkbox">Розовый</label>
+                <input type="checkbox" name="white" id="orange-checkbox">
+                <label for="orange-checkbox">Оранжевый</label>
+                <h3 class="order__type">Фио</h3>
+                <label id="last-name-form">Фамилия:</label>
+                <input type="text" name="last-name" id="last-name-form" placeholder="Укажите фамилию">
+                <label id="name-form">Имя:</label>
+                <input type="text" name="last-name" id="name-form" placeholder="Введите ваше имя">
+                <label id="middle-name-form">Отчество:</label>
+                <input type="text" name="last-name" id="middle-name-form" placeholder="Отчество, если желаете">
+                <h3 class="order__type">Тел</h3>
+                <input type="tel" name="tel" placeholder="+7 ХХХ ХХ ХХ">
+                <p class="order__type">E-mail</p>
+                <input type="email" name="email" placeholder="Ваш e-mail">
+                <h3 class="order__type">Доп</h3>
+                <textarea class="order__comment" name="comment" rows="6">
+                Опишите все ваши пожелания к заказу
+                </textarea>
+                <input class="order__submit" type="submit" value="Отправить Заказ">
+            </form>
+        </div>
+    </div>
+    
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <p class="page-footer__social">
+                <span class="social-links">
+                <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                </span>
+            </p>
+            <p class="page-footer__copyright">
+                Разработано:
+            <a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </p>
+        </div>
+    </footer>
+    
+  </body>
+</html>
